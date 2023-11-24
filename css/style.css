@@ -1,0 +1,19 @@
+body,
+html {
+    margin: 0;
+    height: 0;
+    padding: 0;
+}
+
+.label-red {
+    color: red;
+    font-size: auto;
+}
+
+.container {
+    display: block;
+}
+
+.container h2 {
+    text-align: center;
+}

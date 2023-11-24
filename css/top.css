@@ -1,0 +1,42 @@
+.top-container {
+    background-color: #333;
+    padding-bottom: 40px;
+}
+
+.top-list {
+    display: inline-block;
+    list-style-type: none;
+    position: fixed;
+    max-width: max-content;
+    width: 100%;
+    margin: 0;
+    padding: 1px 0 0 10px;
+}
+
+.top-list li {
+    padding: 10px 100px;
+    float: left;
+}
+
+.top-list li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active-html {
+    background-color: rgb(1, 200, 1);
+    border-radius: 10px;
+}
+
+.active-html:hover {
+    background-color: rgb(1, 190, 1);
+}
+
+.unactive-html:hover {
+    background-color: black;
+    border-radius: 10px;
+}
