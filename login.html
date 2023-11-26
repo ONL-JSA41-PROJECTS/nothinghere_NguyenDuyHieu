@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="lib/font-awesome-all.css">
@@ -18,15 +18,74 @@
                     <a href="home.html">Home</a>
                 </li>
                 <li class="unactive-html">
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li class="unactive-html">
                     <a href="about.html">About us</a>
                 </li>
                 <li class="active-html">
-                    <a href="login.html">Login</a>
+                    <a href="login.html" id="account">Login</a>
                 </li>
             </ul>
         </div>
+        <div class="content">
+            <div class="card-login">
+                <div class="card-white">
+                    <div class="card-image">
+                        <h2 class="card-heading">
+                            Get Started <br>
+                            <small id="title">Let us <span id="label-login-text">login</span> your account</small>
+                        </h2>
+                    </div>
+                    <div class="card-form">
+                        <div class="input signUp">
+                            <label for="" class="input-label">Full name</label><br>
+                            <input type="text" name="" value="" class="input-field" id="fullName" required>
+                        </div>
+                        <div class="input signUp">
+                            <label for="" class="">Username</label><br>
+                            <input type="text" name="" value="" class="input-field" id="userName" required>
+                        </div>
+                        <div class="input login">
+                            <label for="" class="input-label">Email or Username</label><br>
+                            <input type="text" name="" value="" class="input-field login" id="email" required>
+                        </div>
+                        <div class="input login">
+                            <label for="" class="input-label">Password</label><br>
+                            <input type="password" name="" value="" class="input-field login" id="pass" required>
+                        </div>
+                        <div class="input signUp" id="signUp-display-pass">
+                            <label for="" class="input-label">Comfilm Password</label><br>
+                            <input type="password" name="" value="" class="input-field" id="comfilmPass" required>
+                        </div>
+                        <div class="action">
+                            <button type="button" class="action-button" id="btn">Get Started</button>
+                        </div>
+                        <div class="advanceLogin">
+                            <p class="advanLogin">Don't have account! </p>
+                            <a href="#" class="acc" id="signUp">Create an account</a>
+                        </div>
+                    </div>
+
+                    <div class="text-notification" id='text-notification'></div>
+                    <div class="card-info">
+                        <p>
+                            <input type="checkbox" name="" id="checkbox-term">I have read and agree to <a href="#">Terms and conditions</a></p>
+                        </form>
+                        <a href="home.html">
+                            <p>Or continue without login</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="lib/font-awesome-all.js"></script>
+<script src="js/login.js"></script>
+<script src="js/account.js"></script>
+<script>
+</script>
 
 </html>

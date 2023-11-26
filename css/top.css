@@ -1,28 +1,34 @@
 .top-container {
-    background-color: #333;
+    display: flex;
+    justify-items: center;
     padding-bottom: 40px;
+    justify-content: center;
+    background-color: #333;
 }
 
 .top-list {
-    display: inline-block;
+    background-color: #333;
+    display: inline;
     list-style-type: none;
     position: fixed;
     max-width: max-content;
     width: 100%;
     margin: 0;
-    padding: 1px 0 0 10px;
+    overflow: auto;
+    padding: 0;
 }
 
 .top-list li {
-    padding: 10px 100px;
+    padding: 10px 20px;
     float: left;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .top-list li a {
     text-align: center;
     text-decoration: none;
     color: white;
-    cursor: pointer;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,4 +45,13 @@
 .unactive-html:hover {
     background-color: black;
     border-radius: 10px;
+}
+
+.account {
+    justify-content: end;
+    justify-items: end;
+}
+
+.svg-inline--fa {
+    color: white;
 }

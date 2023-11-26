@@ -10,23 +10,27 @@
     <link rel="stylesheet" href="css/about.css">
 </head>
 
-<body>
+<body onload="checkStatus()">
     <div class="container">
         <div class="top-container">
             <ul class="top-list">
                 <li class="unactive-html">
                     <a href="home.html">Home</a>
                 </li>
+                <li class="unactive-html">
+                    <a href="shop.html">Shop</a>
+                </li>
                 <li class="active-html">
                     <a href="about.html">About us</a>
                 </li>
-                <li class="unactive-html">
-                    <a href="login.html">Login</a>
+                <li class="unactive-html"><i class="fa-regular fa-user" style="display:none"></i>
+                    <a href="login.html" id="account">Login</a>
                 </li>
             </ul>
         </div>
     </div>
 </body>
 <script src="lib/font-awesome-all.js"></script>
+<script src="js/account.js"></script>
 
 </html>
