@@ -58,8 +58,10 @@ function checkDataSignIn() {
         alert('Comfilm Password must fill out!')
     } else if (checkComfilmPass !== checkPass) {
         alert("Comfilm Password doesn't match with password sign up")
+    } else if (document.getElementById('checkbox-term').checked == false) {
+        alert('Please indicate that you have read and accept agreements in tickbox')
     } else {
-        saveAccount()
+        saveAccount();
     }
 }
 
@@ -71,5 +73,9 @@ function checkDataLogin() {
         alert('Please put Email or username into box input');
     } else if (checkPass == "") {
         alert('Please put password into box input');
+    } else if (document.getElementById('checkbox-term').checked == false) {
+        alert('Please indicate that you have read and accept agreements in tickbox')
+    } else {
+        loginAccount();
     }
 }
