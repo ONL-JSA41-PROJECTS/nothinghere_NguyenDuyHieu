@@ -4,3 +4,56 @@ html {
     padding: 0;
     height: 0;
 }
+
+.content-container {
+    display: block;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+.img-info {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.showUser {
+    display: inline;
+}
+
+.show-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#showUserName {
+    display: block;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5%;
+    text-rendering: optimizeLegibility;
+}
+
+.head-container h2 {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.showEmailCat,
+.showUserFullNameCat {
+    display: flex;
+    align-items: baseline;
+}
+
+.head-container h2 {
+    font: optional;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-function CheckBrowser() {
+function CheckBrowser() { //Check Brower can support HTML5
     if ('localStorage' in window && window['localStorage'] !== null) {
         return true;
     } else {
@@ -6,13 +6,13 @@ function CheckBrowser() {
     }
 }
 
-function saveAccount() {
+function saveAccount() { //Create Account
     localStorage.quantity = localStorage.quantity + 1;
     var fullName = document.getElementById('fullName').value;
     var userName = document.getElementById('userName').value;
     var email = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
-    localStorage.setItem('fullName ', fullName);
+    localStorage.setItem('fullName', fullName);
     localStorage.setItem('userName', userName);
     localStorage.setItem('email', email);
     localStorage.setItem('pass', pass);
@@ -22,7 +22,7 @@ function saveAccount() {
     // localStorage.
 }
 
-function loginAccount() {
+function loginAccount() { //Login Account
     var userName = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
     if (userName == localStorage.getItem('userName') && pass == localStorage.getItem('pass')) {
@@ -36,7 +36,7 @@ function loginAccount() {
 const displayNameUser = document.getElementById('account');
 const displayUserIcon = document.getElementById('iconUser');
 
-function checkStatus() {
+function checkStatus() { //Change Text when Login of Logout
     if (localStorage.getItem('status') == 'true') {
         displayNameUser.innerHTML = localStorage.userName;
         displayNameUser.setAttribute('href', 'login.before.html');
@@ -45,20 +45,14 @@ function checkStatus() {
     } else if (localStorage.getItem('status') == 'false') {
         displayNameUser.innerHTML = 'Login';
         displayUserIcon.style.display = 'none';
-        console.log('checked account 0')
+        console.log('checked account 0');
+        console.log('')
         ''
     }
 }
 
-function logOutAccount() {
+function logOutAccount() { //Logout Account
     localStorage.status = false;
+    window.location.href = 'login.html';
     checkStatus();
-    window.location.href = 'login.html'
 }
-// function SaveItem() {
-//     var user_name = document.forms.ShoppingList.name.value;
-//     var user_pass = document.forms.ShoppingList.data.value;
-//     localStorage.setItem(user_name, user_pass);
-//     doShowAll();
-// }   doShowAll();
-// }
