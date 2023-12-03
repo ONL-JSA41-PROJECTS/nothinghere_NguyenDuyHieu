@@ -1,0 +1,70 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.container {
+    display: block;
+}
+
+.content {
+    padding: 1% 12.5% 0 12.5%;
+}
+
+.sml-part {
+    padding: 1% 0 1% 0;
+    max-width: max-content;
+}
+
+.text-bold {
+    text-transform: uppercase;
+    font: bolder;
+    font-style: initial;
+    font-weight: bold;
+}
+
+.main-label h3 {
+    /* text-align: center; */
+}
+
+.head-label {
+    text-align: center;
+}
+
+.copyright p {
+    /* padding: -1% 0 -1% 0; */
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    font-weight: bolder;
+    font: bold;
+    margin: 0;
+}
+
+.btn {
+    height: max-content;
+    width: max-content;
+    padding: 1% 10% 1% 10%;
+    background-origin: padding-box;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border-color: chartreuse;
+    /* transform: 0.3s; */
+    transition: 0.3s;
+    box-shadow: 10px;
+}
+
+.btn:hover {
+    background-color: chartreuse;
+    color: #fff
+}
+
+.youReaded {
+    display: flex;
+    justify-content: center;
+    padding: 2.5% 0 1% 0;
+    /* background-attachment: fixed; */
+}

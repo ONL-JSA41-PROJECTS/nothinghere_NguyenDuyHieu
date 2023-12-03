@@ -79,3 +79,11 @@ function checkDataLogin() {
         loginAccount();
     }
 }
+
+function checkBoxinGnu() {
+    if (localStorage.isReaded == 'true') {
+        document.getElementById('checkbox-term').checked = true;
+    } else {
+        document.getElementById('checkbox-term').checked = false;
+    }
+}
