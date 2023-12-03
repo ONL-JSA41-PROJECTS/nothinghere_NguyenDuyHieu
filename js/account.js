@@ -18,7 +18,7 @@ function saveAccount() { //Create Account
     localStorage.setItem('status', true);
     window.location.href = 'home.html';
     alert('Create account sucess!');
-    localStorage.isAnonymous = false;
+    // localStorage.isAnonymous = false;
     // localStorage.
 }
 
@@ -29,7 +29,7 @@ function loginAccount() { //Login Account
         localStorage.status = true;
         alert('Login Sucess!');
         window.location.href = 'home.html';
-        localStorage.isAnonymous = false;
+        // localStorage.isAnonymous = false;
     } else {
         alert('UserName and Password error or not match!');
         localStorage.status = false;
@@ -39,9 +39,9 @@ const displayNameUser = document.getElementById('account');
 const displayUserIcon = document.getElementById('iconUser');
 
 function checkStatus() { //Change Text when Login of Logout
-    if (localStorage.getItem('isAnonymous') == 'true') {
-        displayNameUser.innerHTML = 'anonymous';
-    }
+    // if (localStorage.getItem('isAnonymous') == 'true') {
+    //     displayNameUser.innerHTML = 'anonymous';
+    // } else
     if (localStorage.getItem('status') == 'true') {
         displayNameUser.innerHTML = localStorage.userName;
         displayNameUser.setAttribute('href', 'login.before.html');
@@ -60,11 +60,11 @@ function logOutAccount() { //Logout Account
     // window.location.reload;
     checkStatus();
 }
-
-document.getElementById('anonymous').onclick = function() {
-    if (localStorage.isAnonymous == undefined) {
-        localStorage.setItem('isAnonymous', false);
-        console.log('anonymous is loged');
-        window.location.href = 'home.html'
-    }
-}
+//Reject project add anonymous
+// document.getElementById('anonymous').onclick = function() {
+//     if (localStorage.isAnonymous == undefined) {
+//         localStorage.setItem('isAnonymous', false);
+//         console.log('anonymous is loged');
+//         window.location.href = 'home.html'
+//     }
+// }
