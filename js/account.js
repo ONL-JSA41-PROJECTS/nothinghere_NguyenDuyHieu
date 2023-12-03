@@ -60,6 +60,7 @@ function logOutAccount() { //Logout Account
     // window.location.reload;
     checkStatus();
 }
+
 //Reject project add anonymous
 // document.getElementById('anonymous').onclick = function() {
 //     if (localStorage.isAnonymous == undefined) {
