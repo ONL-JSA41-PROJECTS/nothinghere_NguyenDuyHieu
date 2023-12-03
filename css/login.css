@@ -152,6 +152,7 @@ html {
 .action-button:hover {
     background-color: chartreuse;
     transition: 0.2s;
+    color: #fff;
 }
 
 .action-button:active {

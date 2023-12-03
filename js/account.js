@@ -55,3 +55,5 @@ function logOutAccount() { //Logout Account
     // window.location.reload;
     checkStatus();
 }
+
+var listAccount_nickname = [];
