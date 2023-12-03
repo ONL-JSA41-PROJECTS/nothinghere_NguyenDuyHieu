@@ -44,7 +44,7 @@ function checkStatus() { //Change Text when Login of Logout
     // } else
     if (localStorage.getItem('status') == 'true') {
         displayNameUser.innerHTML = localStorage.userName;
-        displayNameUser.setAttribute('href', 'login.before.html');
+        displayNameUser.setAttribute('href', 'login.after.html');
         displayUserIcon.style.display = 'block';
         console.log('checked account 1');
     } else if (localStorage.getItem('status') == 'false') {
