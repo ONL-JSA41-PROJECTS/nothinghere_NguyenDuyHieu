@@ -7,7 +7,6 @@ function CheckBrowser() { //Check Brower can support HTML5
 }
 
 function saveAccount() { //Create Account
-    localStorage.quantity = localStorage.quantity + 1;
     var fullName = document.getElementById('fullName').value;
     var userName = document.getElementById('userName').value;
     var email = document.getElementById('email').value;
@@ -26,11 +25,12 @@ function loginAccount() { //Login Account
     var userName = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
     if (userName == localStorage.getItem('userName') && pass == localStorage.getItem('pass')) {
-        alert('Login Sucess!');
         localStorage.status = true;
+        alert('Login Sucess!');
         window.location.href = 'home.html';
     } else {
         alert('UserName and Password error or not match!');
+        localStorage.status = false;
     }
 }
 const displayNameUser = document.getElementById('account');
@@ -46,13 +46,12 @@ function checkStatus() { //Change Text when Login of Logout
         displayNameUser.innerHTML = 'Login';
         displayUserIcon.style.display = 'none';
         console.log('checked account 0');
-        console.log('')
-        ''
     }
 }
 
 function logOutAccount() { //Logout Account
     localStorage.status = false;
     window.location.href = 'login.html';
+    // window.location.reload;
     checkStatus();
 }
