@@ -5,6 +5,8 @@ html {
     padding: 0;
 }
 
+
+/* 
 .label-red {
     color: red;
     font-size: auto;
@@ -16,4 +18,94 @@ html {
 
 .container h2 {
     text-align: center;
+} */
+
+.home-category {
+    padding: 0 5% 0 5%;
+}
+
+.lable-item {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+.home-welcome {
+    padding: 8% 70% 15% 3%;
+}
+
+.welcome-content {
+    padding: 0 0 1% 20%;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.home-label {
+    mask-mode: auto;
+    padding: 5%;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.home-categorys {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10% 0% 10% 10%;
+}
+
+.main-category-box {
+    width: 30%;
+    height: 15%;
+    padding: 2%;
+    background-color: #292929;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.lable-category {
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-lable {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.category-lable {
+    padding: 0.5%;
+    text-transform: uppercase;
+}
+
+.home-content {
+    background-image: url(../img/bg-home-dark.png);
+    background-attachment: fixed;
+    color: white;
+    background-color: #292929;
+    background-size: 100%;
+    backdrop-filter: inherit;
+}
+
+.follow-topic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 10% 0;
+}
+
+.item-follow {
+    display: flex;
+}
+
+.item-follow ul {
+    display: flex;
+    padding: 0 2% 0 50%;
+}
+
+.ul-item li {
+    padding: 0 10% 0 10%;
+    size: 200px;
 }
