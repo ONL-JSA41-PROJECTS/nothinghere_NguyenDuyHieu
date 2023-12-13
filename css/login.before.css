@@ -57,3 +57,7 @@ html {
     font: optional;
     text-align: center;
 }
+
+.account-manager {
+    padding-top: 10%;
+}
