@@ -49,6 +49,7 @@ html {
     border-color: black;
     width: 400px;
     /* border: color( red green blue) */
+    margin-top: 3%;
 }
 
 .card-image {
