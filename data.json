@@ -1,0 +1,58 @@
+{
+    "owner": "duyhieu12890",
+    "lastChange": "17/12/2023",
+    "status": "Canary",
+    "winKeyCount": 9,
+    "oKeyCount": 0,
+    "devPackCount": 0,
+    "otherCount": 0,
+    "winKey": [{
+        "index": 1,
+        "name": "Windows 7 Pro OEM Key",
+        "price": 19.99,
+        "image": "img/winKey/win7Pro.png"
+    }, {
+        "index": 2,
+        "name": "WIndows 7 Home Premium OEM Key",
+        "price": 16.99,
+        "image": "img/winKey/win7HomePremium.png"
+    }, {
+        "index": 3,
+        "name": "Windows 8 Pro OEM Key",
+        "price": 23.99,
+        "image": "img/winKey/win81Pro.png"
+    }, {
+        "index": 4,
+        "name": "Windows 8 Home OEM Key",
+        "price": 18.50,
+        "image": "img/winKey/win81Home.png"
+    }, {
+        "index": 5,
+        "name": "WIndows 10 Home OEM Key",
+        "price": 25.99,
+        "image": "img/winKey/win10Home.png"
+    }, {
+        "index": 6,
+        "name": "Windows 10 Pro OEM Key",
+        "price": 32.01,
+        "image": "img/winKey/win10Pro.png"
+    }, {
+        "index": 7,
+        "name": "Windows 10 LTSC OEM Key",
+        "price": 21.99,
+        "image": "img/winKey/win10LTSC2019.png"
+    }, {
+        "index": 8,
+        "name": "Windows 11 Home OEM Key",
+        "price": 28.99,
+        "image": "img/winKey/win11Home.png"
+    }, {
+        "index": 9,
+        "name": "WIndows 11 Home OEM Key",
+        "price": 35.50,
+        "image": "img/winKey/win11Pro.png"
+    }],
+    "oKey": [],
+    "dev": [],
+    "other": []
+}

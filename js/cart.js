@@ -2,4 +2,4 @@ function showItem() {
     document
 }
 
-function addItem(index) {}
+function showCategory(itemShow) {}
