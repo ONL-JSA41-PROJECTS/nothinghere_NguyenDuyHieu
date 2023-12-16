@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="lib/font-awesome-all.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/top.css">
 </head>
 
-<body>
+<body onload="checkLogin()">
     <div class="container">
         <div class="top-container">
             <ul class="top-list">
@@ -33,9 +36,15 @@
             </ul>
         </div>
         <div class="content-container">
-
+            <div class="warn-account">
+                <h2 id="warn-text">! You need to login !</h2>
+            </div>
+            <div class="conent">
+            </div>
         </div>
     </div>
 </body>
+<script src="Lib/font-awesome-all.js"></script>
+<script src="js/cart.js"></script>
 
 </html>
