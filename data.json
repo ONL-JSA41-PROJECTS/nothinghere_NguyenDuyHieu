@@ -2,6 +2,7 @@
     "owner": "duyhieu12890",
     "lastChange": "17/12/2023",
     "status": "Canary",
+    "note": "It's long",
     "winKeyCount": 9,
     "oKeyCount": 0,
     "otherCount": 0,
@@ -47,9 +48,49 @@
         "image": "img/winKey/win11Home.png"
     }, {
         "index": 9,
-        "name": "WIndows 11 Pro OEM Key",
+        "name": "Windows 11 Pro OEM Key",
         "price": 35.50,
         "image": "img/winKey/win11Pro.png"
+    }, {
+        "index": 10,
+        "name": "Windows Server Standard 2016",
+        "price": 40.99,
+        "image": "img/winKey/winServerStandard2016.png"
+    }, {
+        "index": 11,
+        "name": "Windows Server Standard 2019",
+        "price": 53.77,
+        "image": "img/winKey/winServerStandard2019.png"
+    }, {
+        "index": 12,
+        "name": "Windows Server Standard 2022",
+        "price": 60.88,
+        "image": "img/winKey/winServerStandard2022.png"
+    }, {
+        "index": 13,
+        "name": "Windows Server Essentials 2016",
+        "price": 27.33,
+        "image": "img/winKey/winServerEssentials2016.png"
+    }, {
+        "index": 14,
+        "name": "Windows Server Essentials 2019",
+        "price": 32.16,
+        "image": "img/winKey/winServerEssentials2019.png"
+    }, {
+        "index": 15,
+        "name": "Windows Server Datacenter 2016",
+        "price": 29.01,
+        "image": "img/winkey/winServerDataCenter2016.png"
+    }, {
+        "index": 16,
+        "name": "Windows Server Datacenter 2019",
+        "price": 31.99,
+        "image": "img/winkey/winServerDataCenter2019.png"
+    }, {
+        "index": 17,
+        "name": "Windows Server Datacenter 2022",
+        "price": 34.50,
+        "image": "img/winkey/winServerDataCenter2022.png"
     }],
     "oKey": [],
     "other": []
