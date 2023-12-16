@@ -4,7 +4,6 @@
     "status": "Canary",
     "winKeyCount": 9,
     "oKeyCount": 0,
-    "devPackCount": 0,
     "otherCount": 0,
     "winKey": [{
         "index": 1,
@@ -53,6 +52,5 @@
         "image": "img/winKey/win11Pro.png"
     }],
     "oKey": [],
-    "dev": [],
     "other": []
 }
