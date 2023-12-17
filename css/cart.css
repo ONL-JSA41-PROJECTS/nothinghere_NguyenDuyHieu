@@ -5,8 +5,8 @@ html {
     padding: 0;
 }
 
-.warn-account {
-    display: flex;
-    justify-self: center;
-    padding: 10%;
+.warn-text {
+    /* display: flex; */
+    /* justify-self: center; */
+    /* padding: 10%; */
 }

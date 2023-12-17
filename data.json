@@ -127,6 +127,18 @@
         "price": 63.8,
         "status": "ok",
         "image": "img/oKey/o2021ProPlus.png"
+    }, {
+        "index": 4,
+        "name": "Office 2016 Home and Student",
+        "price": 73.50,
+        "status": "ok",
+        "image": "img/oKey/o2016HomeAndStudent.png"
+    }, {
+        "index": 5,
+        "name": "Office 2019 Home And Student",
+        "price": 84.99,
+        "status": "ok",
+        "image": "img/oKey/o2019HomeAndStudent.png"
     }],
     "other": []
 }

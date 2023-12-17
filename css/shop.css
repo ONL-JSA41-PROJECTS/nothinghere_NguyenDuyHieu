@@ -4,3 +4,39 @@ html {
     padding: 0;
     height: 0;
 }
+
+.content-container {
+    display: block;
+    padding-top: 10%;
+}
+
+.select-category {
+    display: flex;
+    justify-content: center;
+}
+
+.content-container a {
+    padding: 0.1% 1.5% 0.5% 1.5%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+    border-radius: 8px;
+    margin: 0 0.5% 0 0.5%;
+}
+
+.content-container a:hover {
+    /* color: black; */
+    color: white;
+    background-color: rgb(100, 100, 100);
+}
+
+.active {
+    color: rgb(44, 44, 44);
+}
+
+.unactive {
+    color: rgb(141, 140, 140);
+}
