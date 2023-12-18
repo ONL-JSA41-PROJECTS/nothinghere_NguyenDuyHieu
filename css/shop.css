@@ -5,6 +5,13 @@ html {
     height: 0;
 }
 
+.container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .content-container {
     display: block;
     padding-top: 10%;
@@ -39,4 +46,31 @@ html {
 
 .unactive {
     color: rgb(141, 140, 140);
+}
+
+.showContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.item {
+    width: 220px;
+    padding: 25px 30px 25px 30px;
+}
+
+.image-items {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.image-items img {
+    width: 160px;
+    height: 224px;
+}
+
+.contentItem {
+    display: flex;
+    align-items: center;
 }
