@@ -48,7 +48,7 @@ html {
     color: rgb(141, 140, 140);
 }
 
-.showContent {
+.productChild {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,7 +56,7 @@ html {
 }
 
 .item {
-    width: 220px;
+    width: 300px;
     padding: 25px 30px 25px 30px;
 }
 
@@ -66,11 +66,10 @@ html {
 }
 
 .image-items img {
-    width: 160px;
-    height: 224px;
+    width: 200px;
+    height: 300px;
 }
 
 .contentItem {
-    display: flex;
     align-items: center;
 }

@@ -1,13 +1,6 @@
 {
-    "owner": "duyhieu12890",
-    "lastChange": "17/12/2023",
-    "status": "Canary",
-    "note": "It's long",
-    "baseKey": ["winKey", "oKey", "other"],
-    "winKeyCount": 17,
-    "oKeyCount": 7,
-    "otherCount": 0,
-    "winKey": [{
+    "count": 17,
+    "data": [{
         "index": 1,
         "name": "Windows 7 Pro OEM Key",
         "price": 19.99,
@@ -109,49 +102,5 @@
         "price": 34.50,
         "status": "ok",
         "image": "img/winKey/winServerDataCenter2022.png"
-    }],
-    "oKey": [{
-        "index": 1,
-        "name": "Office 2016 Pro Plus OEM Key",
-        "price": 49.77,
-        "status": "ok",
-        "image": "img/oKey/o2016ProPlus.png"
-    }, {
-        "index": 2,
-        "name": "Office 2019 Pro Plus OEM Key",
-        "price": 56.32,
-        "status": "ok",
-        "image": "img/oKey/o2019ProPlus.png"
-    }, {
-        "index": 3,
-        "name": "Office 2022 Pro Plus OEM Key",
-        "price": 63.8,
-        "status": "ok",
-        "image": "img/oKey/o2021ProPlus.png"
-    }, {
-        "index": 4,
-        "name": "Office 2016 Home and Student",
-        "price": 73.50,
-        "status": "ok",
-        "image": "img/oKey/o2016HomeAndStudent.png"
-    }, {
-        "index": 5,
-        "name": "Office 2019 Home And Student",
-        "price": 84.99,
-        "status": "ok",
-        "image": "img/oKey/o2019HomeAndStudent.png"
-    }, {
-        "index": 6,
-        "name": "Office 2016 Home and Business for Mac",
-        "price": 70.99,
-        "status": "ok",
-        "image": "img/oKey/o2016HomeAndBusinessforMac.png"
-    }, {
-        "index": 7,
-        "name": "Office 2019 Home and Business for Mac",
-        "price": 76.38,
-        "status": "ok",
-        "image": "img/oKey/o2019HomeAndBusinessforMac.png"
-    }],
-    "other": []
+    }]
 }

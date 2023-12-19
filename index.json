@@ -1,0 +1,13 @@
+{
+    "owner": "duyhieu12890",
+    "lastChange": "17/12/2023",
+    "status": "Canary",
+    "note": "It's long",
+    "baseKey": ["winKey", "oKey", "other"],
+    "winKeyCount": 17,
+    "oKeyCount": 7,
+    "otherCount": 0,
+    "winKey": "data/winKey.json",
+    "oKey": "data/oKey.json",
+    "other": "data/other.json",
+}
