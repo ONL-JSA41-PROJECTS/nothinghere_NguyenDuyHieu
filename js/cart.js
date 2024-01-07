@@ -1,5 +1,3 @@
-function showItem() {
-    document
-}
+function showItem() {}
 
-function showCategory(itemShow) {}
+function showCategory(itemShow) {};

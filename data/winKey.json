@@ -5,102 +5,119 @@
         "name": "Windows 7 Pro OEM Key",
         "price": 19.99,
         "status": "ok",
-        "image": "img/winKey/win7Pro.png"
+        "image": "img/winKey/win7Pro.png",
+        "info": "windows 7 Pro key Lisence"
     }, {
         "index": 2,
         "name": "WIndows 7 Home Premium OEM Key",
         "price": 16.99,
         "status": "ok",
-        "image": "img/winKey/win7HomePremium.png"
+        "image": "img/winKey/win7HomePremium.png",
+        "info": ""
     }, {
         "index": 3,
         "name": "Windows 8 Pro OEM Key",
         "price": 23.99,
         "status": "soldOut",
-        "image": "img/winKey/win81Pro.png"
+        "image": "img/winKey/win81Pro.png",
+        "info": ""
     }, {
         "index": 4,
         "name": "Windows 8 Home OEM Key",
         "price": 18.50,
         "status": "ok",
-        "image": "img/winKey/win81Home.png"
+        "image": "img/winKey/win81Home.png",
+        "info": ""
     }, {
         "index": 5,
         "name": "WIndows 10 Home OEM Key",
         "price": 25.99,
         "status": "ok",
-        "image": "img/winKey/win10Home.png"
+        "image": "img/winKey/win10Home.png",
+        "info": ""
     }, {
         "index": 6,
         "name": "Windows 10 Pro OEM Key",
         "price": 32.01,
         "status": "soldOut",
-        "image": "img/winKey/win10Pro.png"
+        "image": "img/winKey/win10Pro.png",
+        "info": ""
     }, {
         "index": 7,
         "name": "Windows 10 LTSC OEM Key",
         "price": 21.99,
         "status": "ok",
-        "image": "img/winKey/win10LTSC2019.png"
+        "image": "img/winKey/win10LTSC2019.png",
+        "info": ""
     }, {
         "index": 8,
         "name": "Windows 11 Home OEM Key",
         "price": 28.99,
         "status": "ok",
-        "image": "img/winKey/win11Home.png"
+        "image": "img/winKey/win11Home.png",
+        "info": ""
     }, {
         "index": 9,
         "name": "Windows 11 Pro OEM Key",
         "price": 35.50,
         "status": "ok",
-        "image": "img/winKey/win11Pro.png"
+        "image": "img/winKey/win11Pro.png",
+        "info": ""
     }, {
         "index": 10,
         "name": "Windows Server Standard 2016",
         "price": 40.99,
         "status": "ok",
-        "image": "img/winKey/winServerStandard2016.png"
+        "image": "img/winKey/winServerStandard2016.png",
+        "info": ""
     }, {
         "index": 11,
         "name": "Windows Server Standard 2019",
         "price": 53.77,
         "status": "ok",
-        "image": "img/winKey/winServerStandard2019.png"
+        "image": "img/winKey/winServerStandard2019.png",
+        "info": ""
     }, {
         "index": 12,
         "name": "Windows Server Standard 2022",
         "price": 60.88,
         "status": "ok",
-        "image": "img/winKey/winServerStandard2022.png"
+        "image": "img/winKey/winServerStandard2022.png",
+        "info": ""
     }, {
         "index": 13,
         "name": "Windows Server Essentials 2016",
         "price": 27.33,
         "status": "ok",
-        "image": "img/winKey/winServerEssentials2016.png"
+        "image": "img/winKey/winServerEssentials2016.png",
+        "info": ""
     }, {
         "index": 14,
         "name": "Windows Server Essentials 2019",
         "price": 32.16,
         "status": "ok",
-        "image": "img/winKey/winServerEssentials2019.png"
+        "image": "img/winKey/winServerEssentials2019.png",
+        "info": ""
     }, {
         "index": 15,
         "name": "Windows Server Datacenter 2016",
         "price": 29.01,
         "status": "ok",
-        "image": "img/winKey/winServerDataCenter2016.png"
+        "image": "img/winKey/winServerDataCenter2016.png",
+        "info": ""
     }, {
         "index": 16,
         "name": "Windows Server Datacenter 2019",
         "price": 31.99,
         "status": "ok",
-        "image": "img/winKey/winServerDataCenter2019.png"
+        "image": "img/winKey/winServerDataCenter2019.png",
+        "info": ""
     }, {
         "index": 17,
         "name": "Windows Server Datacenter 2022",
         "price": 34.50,
         "status": "ok",
-        "image": "img/winKey/winServerDataCenter2022.png"
+        "image": "img/winKey/winServerDataCenter2022.png",
+        "info": ""
     }]
 }

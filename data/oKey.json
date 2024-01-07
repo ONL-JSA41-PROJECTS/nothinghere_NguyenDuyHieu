@@ -5,19 +5,22 @@
         "name": "Office 2016 Pro Plus OEM Key",
         "price": 49.77,
         "status": "ok",
-        "image": "img/oKey/o2016ProPlus.png"
+        "image": "img/oKey/o2016ProPlus.png",
+        "info": ""
     }, {
         "index": 2,
         "name": "Office 2019 Pro Plus OEM Key",
         "price": 56.32,
         "status": "ok",
-        "image": "img/oKey/o2019ProPlus.png"
+        "image": "img/oKey/o2019ProPlus.png",
+        "info": ""
     }, {
         "index": 3,
         "name": "Office 2022 Pro Plus OEM Key",
         "price": 63.8,
         "status": "ok",
-        "image": "img/oKey/o2021ProPlus.png"
+        "image": "img/oKey/o2021ProPlus.png",
+        "info": ""
     }, {
         "index": 4,
         "name": "Office 2016 Home and Student",
@@ -29,18 +32,21 @@
         "name": "Office 2019 Home And Student",
         "price": 84.99,
         "status": "ok",
-        "image": "img/oKey/o2019HomeAndStudent.png"
+        "image": "img/oKey/o2019HomeAndStudent.png",
+        "info": ""
     }, {
         "index": 6,
         "name": "Office 2016 Home and Business for Mac",
         "price": 70.99,
         "status": "ok",
-        "image": "img/oKey/o2016HomeAndBusinessforMac.png"
+        "image": "img/oKey/o2016HomeAndBusinessforMac.png",
+        "info": ""
     }, {
         "index": 7,
         "name": "Office 2019 Home and Business for Mac",
         "price": 76.38,
         "status": "ok",
-        "image": "img/oKey/o2019HomeAndBusinessforMac.png"
+        "image": "img/oKey/o2019HomeAndBusinessforMac.png",
+        "info": ""
     }]
 }

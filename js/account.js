@@ -71,7 +71,8 @@ function logOutAccount() { //Logout Account
 // }
 
 function checkLogin() {
-    if (localStorage.getItem('status') == true) {
+    if (localStorage.status = true) {
         document.getElementsByClassName('fix')[0].style.display = 'none';
-    } else {}
+    }
+    checkStatus();
 }
