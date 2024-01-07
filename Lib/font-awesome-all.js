@@ -3,8 +3,8 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
-(function () {
-    'use strict';
+(function() {
+    // 'use strict';
 
     var _WINDOW = {};
     var _DOCUMENT = {};
@@ -12,7 +12,7 @@
     try {
         if (typeof window !== 'undefined') _WINDOW = window;
         if (typeof document !== 'undefined') _DOCUMENT = document;
-    } catch (e) { }
+    } catch (e) {}
 
     var _ref = _WINDOW.navigator || {},
         _ref$userAgent = _ref.userAgent,
@@ -28,7 +28,7 @@
 
         if (Object.getOwnPropertySymbols) {
             var symbols = Object.getOwnPropertySymbols(object);
-            enumerableOnly && (symbols = symbols.filter(function (sym) {
+            enumerableOnly && (symbols = symbols.filter(function(sym) {
                 return Object.getOwnPropertyDescriptor(object, sym).enumerable;
             })), keys.push.apply(keys, symbols);
         }
@@ -39,9 +39,9 @@
     function _objectSpread2(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = null != arguments[i] ? arguments[i] : {};
-            i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+            i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
                 _defineProperty(target, key, source[key]);
-            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
                 Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
             });
         }
@@ -100,7 +100,7 @@
     var _familyProxy, _familyProxy2, _familyProxy3, _familyProxy4, _familyProxy5;
 
     var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-    var PRODUCTION = function () {
+    var PRODUCTION = function() {
         try {
             return "production" === 'production';
         } catch (e) {
@@ -205,9 +205,9 @@
     var prefixes = new Set();
     Object.keys(STYLE_TO_PREFIX[FAMILY_CLASSIC]).map(prefixes.add.bind(prefixes));
     Object.keys(STYLE_TO_PREFIX[FAMILY_SHARP]).map(prefixes.add.bind(prefixes));
-    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function (n) {
+    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function(n) {
         return "".concat(n, "x");
-    })).concat(oneToTwenty.map(function (n) {
+    })).concat(oneToTwenty.map(function(n) {
         return "w-".concat(n);
     }));
 
@@ -233,7 +233,7 @@
     var namespace = w[NAMESPACE_IDENTIFIER];
 
     function normalizeIcons(icons) {
-        return Object.keys(icons).reduce(function (acc, iconName) {
+        return Object.keys(icons).reduce(function(acc, iconName) {
             var icon = icons[iconName];
             var expanded = !!icon.icon;
 
@@ -746,13 +746,13 @@
         "steam-symbol": [448, 512, [], "f3f6", "M395.5 177.5c0 33.8-27.5 61-61 61-33.8 0-61-27.3-61-61s27.3-61 61-61c33.5 0 61 27.2 61 61zm52.5.2c0 63-51 113.8-113.7 113.8L225 371.3c-4 43-40.5 76.8-84.5 76.8-40.5 0-74.7-28.8-83-67L0 358V250.7L97.2 290c15.1-9.2 32.2-13.3 52-11.5l71-101.7c.5-62.3 51.5-112.8 114-112.8C397 64 448 115 448 177.7zM203 363c0-34.7-27.8-62.5-62.5-62.5-4.5 0-9 .5-13.5 1.5l26 10.5c25.5 10.2 38 39 27.7 64.5-10.2 25.5-39.2 38-64.7 27.5-10.2-4-20.5-8.3-30.7-12.2 10.5 19.7 31.2 33.2 55.2 33.2 34.7 0 62.5-27.8 62.5-62.5zm207.5-185.3c0-42-34.3-76.2-76.2-76.2-42.3 0-76.5 34.2-76.5 76.2 0 42.2 34.3 76.2 76.5 76.2 41.9.1 76.2-33.9 76.2-76.2z"]
     };
 
-    bunker(function () {
+    bunker(function() {
         defineIcons('fab', icons);
         defineIcons('fa-brands', icons);
     });
 
 }());
-(function () {
+(function() {
     'use strict';
 
     var _WINDOW = {};
@@ -761,7 +761,7 @@
     try {
         if (typeof window !== 'undefined') _WINDOW = window;
         if (typeof document !== 'undefined') _DOCUMENT = document;
-    } catch (e) { }
+    } catch (e) {}
 
     var _ref = _WINDOW.navigator || {},
         _ref$userAgent = _ref.userAgent,
@@ -777,7 +777,7 @@
 
         if (Object.getOwnPropertySymbols) {
             var symbols = Object.getOwnPropertySymbols(object);
-            enumerableOnly && (symbols = symbols.filter(function (sym) {
+            enumerableOnly && (symbols = symbols.filter(function(sym) {
                 return Object.getOwnPropertyDescriptor(object, sym).enumerable;
             })), keys.push.apply(keys, symbols);
         }
@@ -788,9 +788,9 @@
     function _objectSpread2(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = null != arguments[i] ? arguments[i] : {};
-            i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+            i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
                 _defineProperty(target, key, source[key]);
-            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
                 Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
             });
         }
@@ -849,7 +849,7 @@
     var _familyProxy, _familyProxy2, _familyProxy3, _familyProxy4, _familyProxy5;
 
     var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-    var PRODUCTION = function () {
+    var PRODUCTION = function() {
         try {
             return "production" === 'production';
         } catch (e) {
@@ -954,9 +954,9 @@
     var prefixes = new Set();
     Object.keys(STYLE_TO_PREFIX[FAMILY_CLASSIC]).map(prefixes.add.bind(prefixes));
     Object.keys(STYLE_TO_PREFIX[FAMILY_SHARP]).map(prefixes.add.bind(prefixes));
-    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function (n) {
+    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function(n) {
         return "".concat(n, "x");
-    })).concat(oneToTwenty.map(function (n) {
+    })).concat(oneToTwenty.map(function(n) {
         return "w-".concat(n);
     }));
 
@@ -982,7 +982,7 @@
     var namespace = w[NAMESPACE_IDENTIFIER];
 
     function normalizeIcons(icons) {
-        return Object.keys(icons).reduce(function (acc, iconName) {
+        return Object.keys(icons).reduce(function(acc, iconName) {
             var icon = icons[iconName];
             var expanded = !!icon.icon;
 
@@ -1186,13 +1186,13 @@
         "hand-point-left": [512, 512, [], "f0a5", "M64 128l177.6 0c-1 5.2-1.6 10.5-1.6 16l0 16-32 0L64 160c-8.8 0-16-7.2-16-16s7.2-16 16-16zm224 16c0-17.7 14.3-32 32-32c0 0 0 0 0 0l24 0c66.3 0 120 53.7 120 120l0 48c0 52.5-33.7 97.1-80.7 113.4c.5-3.1 .7-6.2 .7-9.4c0-20-9.2-37.9-23.6-49.7c4.9-9 7.6-19.4 7.6-30.3c0-15.1-5.3-29-14-40c8.8-11 14-24.9 14-40l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-40 0-40zm32-80s0 0 0 0c-18 0-34.6 6-48 16L64 80C28.7 80 0 108.7 0 144s28.7 64 64 64l82 0c-1.3 5.1-2 10.5-2 16c0 25.3 14.7 47.2 36 57.6c-2.6 7-4 14.5-4 22.4c0 20 9.2 37.9 23.6 49.7c-4.9 9-7.6 19.4-7.6 30.3c0 35.3 28.7 64 64 64l64 0 24 0c92.8 0 168-75.2 168-168l0-48c0-92.8-75.2-168-168-168l-24 0zM256 400c-8.8 0-16-7.2-16-16s7.2-16 16-16l48 0 16 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0zM240 224c0 5.5 .7 10.9 2 16l-2 0-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0 16zm24 64l40 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-48 0-16 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l24 0z"]
     };
 
-    bunker(function () {
+    bunker(function() {
         defineIcons('far', icons);
         defineIcons('fa-regular', icons);
     });
 
 }());
-(function () {
+(function() {
     'use strict';
 
     var _WINDOW = {};
@@ -1201,7 +1201,7 @@
     try {
         if (typeof window !== 'undefined') _WINDOW = window;
         if (typeof document !== 'undefined') _DOCUMENT = document;
-    } catch (e) { }
+    } catch (e) {}
 
     var _ref = _WINDOW.navigator || {},
         _ref$userAgent = _ref.userAgent,
@@ -1217,7 +1217,7 @@
 
         if (Object.getOwnPropertySymbols) {
             var symbols = Object.getOwnPropertySymbols(object);
-            enumerableOnly && (symbols = symbols.filter(function (sym) {
+            enumerableOnly && (symbols = symbols.filter(function(sym) {
                 return Object.getOwnPropertyDescriptor(object, sym).enumerable;
             })), keys.push.apply(keys, symbols);
         }
@@ -1228,9 +1228,9 @@
     function _objectSpread2(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = null != arguments[i] ? arguments[i] : {};
-            i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+            i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
                 _defineProperty(target, key, source[key]);
-            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
                 Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
             });
         }
@@ -1289,7 +1289,7 @@
     var _familyProxy, _familyProxy2, _familyProxy3, _familyProxy4, _familyProxy5;
 
     var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
-    var PRODUCTION = function () {
+    var PRODUCTION = function() {
         try {
             return "production" === 'production';
         } catch (e) {
@@ -1394,9 +1394,9 @@
     var prefixes = new Set();
     Object.keys(STYLE_TO_PREFIX[FAMILY_CLASSIC]).map(prefixes.add.bind(prefixes));
     Object.keys(STYLE_TO_PREFIX[FAMILY_SHARP]).map(prefixes.add.bind(prefixes));
-    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function (n) {
+    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function(n) {
         return "".concat(n, "x");
-    })).concat(oneToTwenty.map(function (n) {
+    })).concat(oneToTwenty.map(function(n) {
         return "w-".concat(n);
     }));
 
@@ -1422,7 +1422,7 @@
     var namespace = w[NAMESPACE_IDENTIFIER];
 
     function normalizeIcons(icons) {
-        return Object.keys(icons).reduce(function (acc, iconName) {
+        return Object.keys(icons).reduce(function(acc, iconName) {
             var icon = icons[iconName];
             var expanded = !!icon.icon;
 
@@ -2853,13 +2853,13 @@
         "turn-up": [384, 512, [10548, "level-up-alt"], "f3bf", "M350 177.5c3.8-8.8 2-19-4.6-26l-136-144C204.9 2.7 198.6 0 192 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26s12.5 14.5 22 14.5h88l0 192c0 17.7-14.3 32-32 32H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32l80 0c70.7 0 128-57.3 128-128l0-192h88c9.6 0 18.2-5.7 22-14.5z"]
     };
 
-    bunker(function () {
+    bunker(function() {
         defineIcons('fas', icons);
         defineIcons('fa-solid', icons);
     });
 
 }());
-(function () {
+(function() {
     'use strict';
 
     function ownKeys(object, enumerableOnly) {
@@ -2867,7 +2867,7 @@
 
         if (Object.getOwnPropertySymbols) {
             var symbols = Object.getOwnPropertySymbols(object);
-            enumerableOnly && (symbols = symbols.filter(function (sym) {
+            enumerableOnly && (symbols = symbols.filter(function(sym) {
                 return Object.getOwnPropertyDescriptor(object, sym).enumerable;
             })), keys.push.apply(keys, symbols);
         }
@@ -2878,9 +2878,9 @@
     function _objectSpread2(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = null != arguments[i] ? arguments[i] : {};
-            i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+            i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
                 _defineProperty(target, key, source[key]);
-            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function(key) {
                 Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
             });
         }
@@ -2891,15 +2891,15 @@
     function _typeof(obj) {
         "@babel/helpers - typeof";
 
-        return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+        return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
             return typeof obj;
-        } : function (obj) {
+        } : function(obj) {
             return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
         }, _typeof(obj);
     }
 
     function _wrapRegExp() {
-        _wrapRegExp = function (re, groups) {
+        _wrapRegExp = function(re, groups) {
             return new BabelRegExp(re, void 0, groups);
         };
 
@@ -2915,20 +2915,20 @@
         function buildGroups(result, re) {
             var g = _groups.get(re);
 
-            return Object.keys(g).reduce(function (groups, name) {
+            return Object.keys(g).reduce(function(groups, name) {
                 return groups[name] = result[g[name]], groups;
             }, Object.create(null));
         }
 
-        return _inherits(BabelRegExp, RegExp), BabelRegExp.prototype.exec = function (str) {
+        return _inherits(BabelRegExp, RegExp), BabelRegExp.prototype.exec = function(str) {
             var result = _super.exec.call(this, str);
 
             return result && (result.groups = buildGroups(result, this)), result;
-        }, BabelRegExp.prototype[Symbol.replace] = function (str, substitution) {
+        }, BabelRegExp.prototype[Symbol.replace] = function(str, substitution) {
             if ("string" == typeof substitution) {
                 var groups = _groups.get(this);
 
-                return _super[Symbol.replace].call(this, str, substitution.replace(/\$<([^>]+)>/g, function (_, name) {
+                return _super[Symbol.replace].call(this, str, substitution.replace(/\$<([^>]+)>/g, function(_, name) {
                     return "$" + groups[name];
                 }));
             }
@@ -2936,7 +2936,7 @@
             if ("function" == typeof substitution) {
                 var _this = this;
 
-                return _super[Symbol.replace].call(this, str, function () {
+                return _super[Symbol.replace].call(this, str, function() {
                     var args = arguments;
                     return "object" != typeof args[args.length - 1] && (args = [].slice.call(args)).push(buildGroups(args, _this)), substitution.apply(this, args);
                 });
@@ -3088,7 +3088,7 @@
         throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
     }
 
-    var noop = function noop() { };
+    var noop = function noop() {};
 
     var _WINDOW = {};
     var _DOCUMENT = {};
@@ -3103,7 +3103,7 @@
         if (typeof document !== 'undefined') _DOCUMENT = document;
         if (typeof MutationObserver !== 'undefined') _MUTATION_OBSERVER = MutationObserver;
         if (typeof performance !== 'undefined') _PERFORMANCE = performance;
-    } catch (e) { }
+    } catch (e) {}
 
     var _ref = _WINDOW.navigator || {},
         _ref$userAgent = _ref.userAgent,
@@ -3130,7 +3130,7 @@
     var HTML_CLASS_I2SVG_BASE_CLASS = 'fontawesome-i2svg';
     var MUTATION_APPROACH_ASYNC = 'async';
     var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
-    var PRODUCTION = function () {
+    var PRODUCTION = function() {
         try {
             return "production" === 'production';
         } catch (e) {
@@ -3240,9 +3240,9 @@
     var prefixes = new Set();
     Object.keys(STYLE_TO_PREFIX[FAMILY_CLASSIC]).map(prefixes.add.bind(prefixes));
     Object.keys(STYLE_TO_PREFIX[FAMILY_SHARP]).map(prefixes.add.bind(prefixes));
-    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function (n) {
+    var RESERVED_CLASSES = [].concat(FAMILIES, _toConsumableArray(prefixes), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function(n) {
         return "".concat(n, "x");
-    })).concat(oneToTwenty.map(function (n) {
+    })).concat(oneToTwenty.map(function(n) {
         return "w-".concat(n);
     }));
 
@@ -3266,8 +3266,23 @@
     }
 
     if (DOCUMENT && typeof DOCUMENT.querySelector === 'function') {
-        var attrs = [['data-family-prefix', 'familyPrefix'], ['data-css-prefix', 'cssPrefix'], ['data-family-default', 'familyDefault'], ['data-style-default', 'styleDefault'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-elements', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-mutate-approach', 'mutateApproach'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
-        attrs.forEach(function (_ref) {
+        var attrs = [
+            ['data-family-prefix', 'familyPrefix'],
+            ['data-css-prefix', 'cssPrefix'],
+            ['data-family-default', 'familyDefault'],
+            ['data-style-default', 'styleDefault'],
+            ['data-replacement-class', 'replacementClass'],
+            ['data-auto-replace-svg', 'autoReplaceSvg'],
+            ['data-auto-add-css', 'autoAddCss'],
+            ['data-auto-a11y', 'autoA11y'],
+            ['data-search-pseudo-elements', 'searchPseudoElements'],
+            ['data-observe-mutations', 'observeMutations'],
+            ['data-mutate-approach', 'mutateApproach'],
+            ['data-keep-original-source', 'keepOriginalSource'],
+            ['data-measure-performance', 'measurePerformance'],
+            ['data-show-missing-icons', 'showMissingIcons']
+        ];
+        attrs.forEach(function(_ref) {
             var _ref2 = _slicedToArray(_ref, 2),
                 attr = _ref2[0],
                 key = _ref2[1];
@@ -3304,13 +3319,13 @@
 
     if (!_config.autoReplaceSvg) _config.observeMutations = false;
     var config = {};
-    Object.keys(_default).forEach(function (key) {
+    Object.keys(_default).forEach(function(key) {
         Object.defineProperty(config, key, {
             enumerable: true,
             set: function set(val) {
                 _config[key] = val;
 
-                _onChangeCb.forEach(function (cb) {
+                _onChangeCb.forEach(function(cb) {
                     return cb(config);
                 });
             },
@@ -3325,7 +3340,7 @@
         set: function set(val) {
             _config.cssPrefix = val;
 
-            _onChangeCb.forEach(function (cb) {
+            _onChangeCb.forEach(function(cb) {
                 return cb(config);
             });
         },
@@ -3335,10 +3350,11 @@
     });
     WINDOW.FontAwesomeConfig = config;
     var _onChangeCb = [];
+
     function onChange(cb) {
         _onChangeCb.push(cb);
 
-        return function () {
+        return function() {
             _onChangeCb.splice(_onChangeCb.indexOf(cb), 1);
         };
     }
@@ -3352,6 +3368,7 @@
         flipX: false,
         flipY: false
     };
+
     function bunker(fn) {
         try {
             for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -3365,6 +3382,7 @@
             }
         }
     }
+
     function insertCss(css) {
         if (!css || !IS_DOM) {
             return;
@@ -3389,6 +3407,7 @@
         return css;
     }
     var idPool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
     function nextUniqueId() {
         var size = 12;
         var id = '';
@@ -3399,6 +3418,7 @@
 
         return id;
     }
+
     function toArray(obj) {
         var array = [];
 
@@ -3408,31 +3428,37 @@
 
         return array;
     }
+
     function classArray(node) {
         if (node.classList) {
             return toArray(node.classList);
         } else {
-            return (node.getAttribute('class') || '').split(' ').filter(function (i) {
+            return (node.getAttribute('class') || '').split(' ').filter(function(i) {
                 return i;
             });
         }
     }
+
     function htmlEscape(str) {
         return "".concat(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
+
     function joinAttributes(attributes) {
-        return Object.keys(attributes || {}).reduce(function (acc, attributeName) {
+        return Object.keys(attributes || {}).reduce(function(acc, attributeName) {
             return acc + "".concat(attributeName, "=\"").concat(htmlEscape(attributes[attributeName]), "\" ");
         }, '').trim();
     }
+
     function joinStyles(styles) {
-        return Object.keys(styles || {}).reduce(function (acc, styleName) {
+        return Object.keys(styles || {}).reduce(function(acc, styleName) {
             return acc + "".concat(styleName, ": ").concat(styles[styleName].trim(), ";");
         }, '');
     }
+
     function transformIsMeaningful(transform) {
         return transform.size !== meaninglessTransform.size || transform.x !== meaninglessTransform.x || transform.y !== meaninglessTransform.y || transform.rotate !== meaninglessTransform.rotate || transform.flipX || transform.flipY;
     }
+
     function transformForSvg(_ref) {
         var transform = _ref.transform,
             containerWidth = _ref.containerWidth,
@@ -3455,6 +3481,7 @@
             path: path
         };
     }
+
     function transformForCss(_ref2) {
         var transform = _ref2.transform,
             _ref2$width = _ref2.width,
@@ -3539,7 +3566,7 @@
     var listener = function listener() {
         DOCUMENT.removeEventListener('DOMContentLoaded', listener);
         loaded = 1;
-        functions.map(function (fn) {
+        functions.map(function(fn) {
             return fn();
         });
     };
@@ -3586,7 +3613,7 @@
      */
 
     var bindInternal4 = function bindInternal4(func, thisContext) {
-        return function (a, b, c, d) {
+        return function(a, b, c, d) {
             return func.call(thisContext, a, b, c, d);
         };
     };
@@ -3632,7 +3659,7 @@
      * ucs2decode() and codePointAt() are both works of Mathias Bynens and licensed under MIT
      *
      * Copyright Mathias Bynens <https://mathiasbynens.be/>
-  
+
      * Permission is hereby granted, free of charge, to any person obtaining
      * a copy of this software and associated documentation files (the
      * "Software"), to deal in the Software without restriction, including
@@ -3640,10 +3667,10 @@
      * distribute, sublicense, and/or sell copies of the Software, and to
      * permit persons to whom the Software is furnished to do so, subject to
      * the following conditions:
-  
+
      * The above copyright notice and this permission notice shall be
      * included in all copies or substantial portions of the Software.
-  
+
      * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
      * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
      * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -3682,6 +3709,7 @@
         var decoded = ucs2decode(unicode);
         return decoded.length === 1 ? decoded[0].toString(16) : null;
     }
+
     function codePointAt(string, index) {
         var size = string.length;
         var first = string.charCodeAt(index);
@@ -3699,7 +3727,7 @@
     }
 
     function normalizeIcons(icons) {
-        return Object.keys(icons).reduce(function (acc, iconName) {
+        return Object.keys(icons).reduce(function(acc, iconName) {
             var icon = icons[iconName];
             var expanded = !!icon.icon;
 
@@ -3737,15 +3765,15 @@
         }
     }
 
-    var duotonePathRe = [/*#__PURE__*/_wrapRegExp(/path d="((?:(?!")[\s\S])+)".*path d="((?:(?!")[\s\S])+)"/, {
+    var duotonePathRe = [ /*#__PURE__*/ _wrapRegExp(/path d="((?:(?!")[\s\S])+)".*path d="((?:(?!")[\s\S])+)"/, {
         d1: 1,
         d2: 2
-    }), /*#__PURE__*/_wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)".*path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
+    }), /*#__PURE__*/ _wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)".*path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
         cls1: 1,
         d1: 2,
         cls2: 3,
         d2: 4
-    }), /*#__PURE__*/_wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
+    }), /*#__PURE__*/ _wrapRegExp(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/, {
         cls1: 1,
         d1: 2
     })];
@@ -3779,46 +3807,46 @@
     }
     var build = function build() {
         var lookup = function lookup(reducer) {
-            return reduce(styles, function (o, style, prefix) {
+            return reduce(styles, function(o, style, prefix) {
                 o[prefix] = reduce(style, reducer, {});
                 return o;
             }, {});
         };
 
-        _byUnicode = lookup(function (acc, icon, iconName) {
+        _byUnicode = lookup(function(acc, icon, iconName) {
             if (icon[3]) {
                 acc[icon[3]] = iconName;
             }
 
             if (icon[2]) {
-                var aliases = icon[2].filter(function (a) {
+                var aliases = icon[2].filter(function(a) {
                     return typeof a === 'number';
                 });
-                aliases.forEach(function (alias) {
+                aliases.forEach(function(alias) {
                     acc[alias.toString(16)] = iconName;
                 });
             }
 
             return acc;
         });
-        _byLigature = lookup(function (acc, icon, iconName) {
+        _byLigature = lookup(function(acc, icon, iconName) {
             acc[iconName] = iconName;
 
             if (icon[2]) {
-                var aliases = icon[2].filter(function (a) {
+                var aliases = icon[2].filter(function(a) {
                     return typeof a === 'string';
                 });
-                aliases.forEach(function (alias) {
+                aliases.forEach(function(alias) {
                     acc[alias] = iconName;
                 });
             }
 
             return acc;
         });
-        _byAlias = lookup(function (acc, icon, iconName) {
+        _byAlias = lookup(function(acc, icon, iconName) {
             var aliases = icon[2];
             acc[iconName] = iconName;
-            aliases.forEach(function (alias) {
+            aliases.forEach(function(alias) {
                 acc[alias] = iconName;
             });
             return acc;
@@ -3826,7 +3854,7 @@
         // could be auto-fetching it. We'll have to assume that it is available.
 
         var hasRegular = 'far' in styles || config.autoFetchSvg;
-        var shimLookups = reduce(shims, function (acc, shim) {
+        var shimLookups = reduce(shims, function(acc, shim) {
             var maybeNameMaybeUnicode = shim[0];
             var prefix = shim[1];
             var iconName = shim[2];
@@ -3860,27 +3888,32 @@
             family: config.familyDefault
         });
     };
-    onChange(function (c) {
+    onChange(function(c) {
         _defaultUsablePrefix = getCanonicalPrefix(c.styleDefault, {
             family: config.familyDefault
         });
     });
     build();
+
     function byUnicode(prefix, unicode) {
         return (_byUnicode[prefix] || {})[unicode];
     }
+
     function byLigature(prefix, ligature) {
         return (_byLigature[prefix] || {})[ligature];
     }
+
     function byAlias(prefix, alias) {
         return (_byAlias[prefix] || {})[alias];
     }
+
     function byOldName(name) {
         return _byOldName[name] || {
             prefix: null,
             iconName: null
         };
     }
+
     function byOldUnicode(unicode) {
         var oldUnicode = _byOldUnicode[unicode];
         var newUnicode = byUnicode('fas', unicode);
@@ -3892,6 +3925,7 @@
             iconName: null
         };
     }
+
     function getDefaultUsablePrefix() {
         return _defaultUsablePrefix;
     }
@@ -3902,6 +3936,7 @@
             rest: []
         };
     };
+
     function getCanonicalPrefix(styleOrPrefix) {
         var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
         var _params$family = params.family,
@@ -3912,6 +3947,7 @@
         return prefix || defined || null;
     }
     var PREFIXES_FOR_FAMILY = (_PREFIXES_FOR_FAMILY = {}, _defineProperty(_PREFIXES_FOR_FAMILY, FAMILY_CLASSIC, Object.keys(PREFIX_TO_LONG_STYLE[FAMILY_CLASSIC])), _defineProperty(_PREFIXES_FOR_FAMILY, FAMILY_SHARP, Object.keys(PREFIX_TO_LONG_STYLE[FAMILY_SHARP])), _PREFIXES_FOR_FAMILY);
+
     function getCanonicalIcon(values) {
         var _famProps;
 
@@ -3922,19 +3958,19 @@
         var givenPrefix = null;
         var family = FAMILY_CLASSIC;
 
-        if (values.includes(famProps[FAMILY_CLASSIC]) || values.some(function (v) {
-            return PREFIXES_FOR_FAMILY[FAMILY_CLASSIC].includes(v);
-        })) {
+        if (values.includes(famProps[FAMILY_CLASSIC]) || values.some(function(v) {
+                return PREFIXES_FOR_FAMILY[FAMILY_CLASSIC].includes(v);
+            })) {
             family = FAMILY_CLASSIC;
         }
 
-        if (values.includes(famProps[FAMILY_SHARP]) || values.some(function (v) {
-            return PREFIXES_FOR_FAMILY[FAMILY_SHARP].includes(v);
-        })) {
+        if (values.includes(famProps[FAMILY_SHARP]) || values.some(function(v) {
+                return PREFIXES_FOR_FAMILY[FAMILY_SHARP].includes(v);
+            })) {
             family = FAMILY_SHARP;
         }
 
-        var canonical = values.reduce(function (acc, cls) {
+        var canonical = values.reduce(function(acc, cls) {
             var iconName = getIconName(config.cssPrefix, cls);
 
             if (styles[cls]) {
@@ -3995,7 +4031,7 @@
         return canonical;
     }
 
-    var Library = /*#__PURE__*/function () {
+    var Library = /*#__PURE__*/ function() {
         function Library() {
             _classCallCheck(this, Library);
 
@@ -4012,7 +4048,7 @@
                 }
 
                 var additions = definitions.reduce(this._pullDefinitions, {});
-                Object.keys(additions).forEach(function (key) {
+                Object.keys(additions).forEach(function(key) {
                     _this.definitions[key] = _objectSpread2(_objectSpread2({}, _this.definitions[key] || {}), additions[key]);
                     defineIcons(key, additions[key]); // TODO can we stop doing this? We can't get the icons by 'fa-solid' any longer so this probably needs to change
 
@@ -4032,7 +4068,7 @@
                 var normalized = definition.prefix && definition.iconName && definition.icon ? {
                     0: definition
                 } : definition;
-                Object.keys(normalized).map(function (key) {
+                Object.keys(normalized).map(function(key) {
                     var _normalized$key = normalized[key],
                         prefix = _normalized$key.prefix,
                         iconName = _normalized$key.iconName,
@@ -4041,7 +4077,7 @@
                     if (!additions[prefix]) additions[prefix] = {};
 
                     if (aliases.length > 0) {
-                        aliases.forEach(function (alias) {
+                        aliases.forEach(function(alias) {
                             if (typeof alias === 'string') {
                                 additions[prefix][alias] = icon;
                             }
@@ -4061,25 +4097,26 @@
     var _hooks = {};
     var providers = {};
     var defaultProviderKeys = Object.keys(providers);
+
     function registerPlugins(nextPlugins, _ref) {
         var obj = _ref.mixoutsTo;
         _plugins = nextPlugins;
         _hooks = {};
-        Object.keys(providers).forEach(function (k) {
+        Object.keys(providers).forEach(function(k) {
             if (defaultProviderKeys.indexOf(k) === -1) {
                 delete providers[k];
             }
         });
 
-        _plugins.forEach(function (plugin) {
+        _plugins.forEach(function(plugin) {
             var mixout = plugin.mixout ? plugin.mixout() : {};
-            Object.keys(mixout).forEach(function (tk) {
+            Object.keys(mixout).forEach(function(tk) {
                 if (typeof mixout[tk] === 'function') {
                     obj[tk] = mixout[tk];
                 }
 
                 if (_typeof(mixout[tk]) === 'object') {
-                    Object.keys(mixout[tk]).forEach(function (sk) {
+                    Object.keys(mixout[tk]).forEach(function(sk) {
                         if (!obj[tk]) {
                             obj[tk] = {};
                         }
@@ -4091,7 +4128,7 @@
 
             if (plugin.hooks) {
                 var hooks = plugin.hooks();
-                Object.keys(hooks).forEach(function (hook) {
+                Object.keys(hooks).forEach(function(hook) {
                     if (!_hooks[hook]) {
                         _hooks[hook] = [];
                     }
@@ -4107,28 +4144,31 @@
 
         return obj;
     }
+
     function chainHooks(hook, accumulator) {
         for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
             args[_key - 2] = arguments[_key];
         }
 
         var hookFns = _hooks[hook] || [];
-        hookFns.forEach(function (hookFn) {
+        hookFns.forEach(function(hookFn) {
             accumulator = hookFn.apply(null, [accumulator].concat(args)); // eslint-disable-line no-useless-call
         });
         return accumulator;
     }
+
     function callHooks(hook) {
         for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
             args[_key2 - 1] = arguments[_key2];
         }
 
         var hookFns = _hooks[hook] || [];
-        hookFns.forEach(function (hookFn) {
+        hookFns.forEach(function(hookFn) {
             hookFn.apply(null, args);
         });
         return undefined;
     }
+
     function callProvided() {
         var hook = arguments[0];
         var args = Array.prototype.slice.call(arguments, 1);
@@ -4173,7 +4213,7 @@
             }
 
             config.observeMutations = true;
-            domready(function () {
+            domready(function() {
                 autoReplace({
                     autoReplaceSvgRoot: autoReplaceSvgRoot
                 });
@@ -4248,7 +4288,7 @@
                 WINDOW.FontAwesome = api;
             }
 
-            domready(function () {
+            domready(function() {
                 autoReplace();
                 callHooks('bootstrap');
             });
@@ -4261,7 +4301,7 @@
                 autoReplace();
             },
             addPacks: function addPacks(packs) {
-                packs.forEach(function (_ref) {
+                packs.forEach(function(_ref) {
                     var _ref2 = _slicedToArray(_ref, 2),
                         prefix = _ref2[0],
                         icons = _ref2[1];
@@ -4288,7 +4328,7 @@
         });
         Object.defineProperty(val, 'html', {
             get: function get() {
-                return val.abstract.map(function (a) {
+                return val.abstract.map(function(a) {
                     return toHtml(a);
                 });
             }
@@ -4373,9 +4413,9 @@
             height = _ref.height;
 
         var isUploadedIcon = prefix === 'fak';
-        var attrClass = [config.replacementClass, iconName ? "".concat(config.cssPrefix, "-").concat(iconName) : ''].filter(function (c) {
+        var attrClass = [config.replacementClass, iconName ? "".concat(config.cssPrefix, "-").concat(iconName) : ''].filter(function(c) {
             return extra.classes.indexOf(c) === -1;
-        }).filter(function (c) {
+        }).filter(function(c) {
             return c !== '' || !!c;
         }).concat(extra.classes).join(' ');
         var content = {
@@ -4420,12 +4460,12 @@
         });
 
         var _ref2 = mask.found && main.found ? callProvided('generateAbstractMask', args) || {
-            children: [],
-            attributes: {}
-        } : callProvided('generateAbstractIcon', args) || {
-            children: [],
-            attributes: {}
-        },
+                children: [],
+                attributes: {}
+            } : callProvided('generateAbstractIcon', args) || {
+                children: [],
+                attributes: {}
+            },
             children = _ref2.children,
             attributes = _ref2.attributes;
 
@@ -4438,6 +4478,7 @@
             return asIcon(args);
         }
     }
+
     function makeLayersTextAbstract(params) {
         var content = params.content,
             width = params.width,
@@ -4495,6 +4536,7 @@
 
         return val;
     }
+
     function makeLayersCounterAbstract(params) {
         var content = params.content,
             title = params.title,
@@ -4533,6 +4575,7 @@
     }
 
     var styles$1 = namespace.styles;
+
     function asFoundIcon(icon) {
         var width = icon[0];
         var height = icon[1];
@@ -4601,7 +4644,7 @@
             prefix = getDefaultUsablePrefix();
         }
 
-        return new Promise(function (resolve, reject) {
+        return new Promise(function(resolve, reject) {
             var val = {
                 found: false,
                 width: 512,
@@ -4627,7 +4670,7 @@
         });
     }
 
-    var noop$1 = function noop() { };
+    var noop$1 = function noop() {};
 
     var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
         mark: noop$1,
@@ -4637,7 +4680,7 @@
 
     var begin = function begin(name) {
         p.mark("".concat(preamble, " ").concat(name, " begins"));
-        return function () {
+        return function() {
             return end(name);
         };
     };
@@ -4652,7 +4695,7 @@
         end: end
     };
 
-    var noop$2 = function noop() { };
+    var noop$2 = function noop() {};
 
     function isWatched(node) {
         var i2svg = node.getAttribute ? node.getAttribute(DATA_FA_I2SVG) : null;
@@ -4696,11 +4739,11 @@
         }
 
         var tag = ceFn(abstractObj.tag);
-        Object.keys(abstractObj.attributes || []).forEach(function (key) {
+        Object.keys(abstractObj.attributes || []).forEach(function(key) {
             tag.setAttribute(key, abstractObj.attributes[key]);
         });
         var children = abstractObj.children || [];
-        children.forEach(function (child) {
+        children.forEach(function(child) {
             tag.appendChild(convertSVG(child, {
                 ceFn: ceFn
             }));
@@ -4723,7 +4766,7 @@
             var node = mutation[0];
 
             if (node.parentNode) {
-                mutation[1].forEach(function (_abstract) {
+                mutation[1].forEach(function(_abstract) {
                     node.parentNode.insertBefore(convertSVG(_abstract), node);
                 });
 
@@ -4748,7 +4791,7 @@
             delete _abstract2[0].attributes.id;
 
             if (_abstract2[0].attributes.class) {
-                var splitClasses = _abstract2[0].attributes.class.split(' ').reduce(function (acc, cls) {
+                var splitClasses = _abstract2[0].attributes.class.split(' ').reduce(function(acc, cls) {
                     if (cls === config.replacementClass || cls.match(forSvg)) {
                         acc.toSvg.push(cls);
                     } else {
@@ -4770,7 +4813,7 @@
                 }
             }
 
-            var newInnerHTML = _abstract2.map(function (a) {
+            var newInnerHTML = _abstract2.map(function(a) {
                 return toHtml(a);
             }).join('\n');
 
@@ -4795,7 +4838,7 @@
                 frame = WINDOW.requestAnimationFrame || performOperationSync;
             }
 
-            frame(function () {
+            frame(function() {
                 var mutator = getMutator();
                 var mark = perf.begin('mutate');
                 mutations.map(mutator);
@@ -4805,13 +4848,16 @@
         }
     }
     var disabled = false;
+
     function disableObservation() {
         disabled = true;
     }
+
     function enableObservation() {
         disabled = false;
     }
     var mo = null;
+
     function observe(options) {
         if (!MUTATION_OBSERVER) {
             return;
@@ -4829,10 +4875,10 @@
             pseudoElementsCallback = _options$pseudoElemen === void 0 ? noop$2 : _options$pseudoElemen,
             _options$observeMutat = options.observeMutationsRoot,
             observeMutationsRoot = _options$observeMutat === void 0 ? DOCUMENT : _options$observeMutat;
-        mo = new MUTATION_OBSERVER(function (objects) {
+        mo = new MUTATION_OBSERVER(function(objects) {
             if (disabled) return;
             var defaultPrefix = getDefaultUsablePrefix();
-            toArray(objects).forEach(function (mutationRecord) {
+            toArray(objects).forEach(function(mutationRecord) {
                 if (mutationRecord.type === 'childList' && mutationRecord.addedNodes.length > 0 && !isWatched(mutationRecord.addedNodes[0])) {
                     if (config.searchPseudoElements) {
                         pseudoElementsCallback(mutationRecord.target);
@@ -4867,6 +4913,7 @@
             subtree: true
         });
     }
+
     function disconnect() {
         if (!mo) return;
         mo.disconnect();
@@ -4877,7 +4924,7 @@
         var val = [];
 
         if (style) {
-            val = style.split(';').reduce(function (acc, style) {
+            val = style.split(';').reduce(function(acc, style) {
                 var styles = style.split(':');
                 var prop = styles[0];
                 var value = styles.slice(1);
@@ -4924,7 +4971,7 @@
     }
 
     function attributesParser(node) {
-        var extraAttributes = toArray(node.attributes).reduce(function (acc, attr) {
+        var extraAttributes = toArray(node.attributes).reduce(function(acc, attr) {
             if (acc.name !== 'class' && acc.name !== 'style') {
                 acc[attr.name] = attr.value;
             }
@@ -4967,6 +5014,7 @@
             }
         };
     }
+
     function parseMeta(node) {
         var parser = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
             styleParser: true
@@ -5016,7 +5064,7 @@
     }
 
     var knownPrefixes = new Set();
-    FAMILIES.map(function (family) {
+    FAMILIES.map(function(family) {
         knownPrefixes.add("fa-".concat(family));
     });
     Object.keys(PREFIX_TO_STYLE[FAMILY_CLASSIC]).map(knownPrefixes.add.bind(knownPrefixes));
@@ -5036,7 +5084,7 @@
             return htmlClassList.remove("".concat(HTML_CLASS_I2SVG_BASE_CLASS, "-").concat(suffix));
         };
 
-        var prefixes = config.autoFetchSvg ? knownPrefixes : FAMILIES.map(function (f) {
+        var prefixes = config.autoFetchSvg ? knownPrefixes : FAMILIES.map(function(f) {
             return "fa-".concat(f);
         }).concat(Object.keys(styles$2));
 
@@ -5044,7 +5092,7 @@
             prefixes.push('fa');
         }
 
-        var prefixesDomQuery = [".".concat(LAYERS_TEXT_CLASSNAME, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function (p) {
+        var prefixesDomQuery = [".".concat(LAYERS_TEXT_CLASSNAME, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function(p) {
             return ".".concat(p, ":not([").concat(DATA_FA_I2SVG, "])");
         })).join(', ');
 
@@ -5056,7 +5104,7 @@
 
         try {
             candidates = toArray(root.querySelectorAll(prefixesDomQuery));
-        } catch (e) {// noop
+        } catch (e) { // noop
         }
 
         if (candidates.length > 0) {
@@ -5067,7 +5115,7 @@
         }
 
         var mark = perf.begin('onTree');
-        var mutations = candidates.reduce(function (acc, node) {
+        var mutations = candidates.reduce(function(acc, node) {
             try {
                 var mutation = generateMutation(node);
 
@@ -5084,9 +5132,9 @@
 
             return acc;
         }, []);
-        return new Promise(function (resolve, reject) {
-            Promise.all(mutations).then(function (resolvedMutations) {
-                perform(resolvedMutations, function () {
+        return new Promise(function(resolve, reject) {
+            Promise.all(mutations).then(function(resolvedMutations) {
+                perform(resolvedMutations, function() {
                     hclAdd('active');
                     hclAdd('complete');
                     hclRemove('pending');
@@ -5094,7 +5142,7 @@
                     mark();
                     resolve();
                 });
-            }).catch(function (e) {
+            }).catch(function(e) {
                 mark();
                 reject(e);
             });
@@ -5103,7 +5151,7 @@
 
     function onNode(node) {
         var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-        generateMutation(node).then(function (mutation) {
+        generateMutation(node).then(function(mutation) {
             if (mutation) {
                 perform([mutation], callback);
             }
@@ -5111,7 +5159,7 @@
     }
 
     function resolveIcons(next) {
-        return function (maybeIconDefinition) {
+        return function(maybeIconDefinition) {
             var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
             var iconDefinition = (maybeIconDefinition || {}).icon ? maybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
             var mask = params.mask;
@@ -5152,7 +5200,7 @@
             icon = iconDefinition.icon;
         return domVariants(_objectSpread2({
             type: 'icon'
-        }, iconDefinition), function () {
+        }, iconDefinition), function() {
             callHooks('beforeDOMElementCreation', {
                 iconDefinition: iconDefinition,
                 params: params
@@ -5208,15 +5256,15 @@
             };
         },
         provides: function provides(providers$$1) {
-            providers$$1.i2svg = function (params) {
+            providers$$1.i2svg = function(params) {
                 var _params$node = params.node,
                     node = _params$node === void 0 ? DOCUMENT : _params$node,
                     _params$callback = params.callback,
-                    callback = _params$callback === void 0 ? function () { } : _params$callback;
+                    callback = _params$callback === void 0 ? function() {} : _params$callback;
                 return onTree(node, callback);
             };
 
-            providers$$1.generateSvgReplacementMutation = function (node, nodeMeta) {
+            providers$$1.generateSvgReplacementMutation = function(node, nodeMeta) {
                 var iconName = nodeMeta.iconName,
                     title = nodeMeta.title,
                     titleId = nodeMeta.titleId,
@@ -5226,13 +5274,13 @@
                     mask = nodeMeta.mask,
                     maskId = nodeMeta.maskId,
                     extra = nodeMeta.extra;
-                return new Promise(function (resolve, reject) {
+                return new Promise(function(resolve, reject) {
                     Promise.all([findIcon(iconName, prefix), mask.iconName ? findIcon(mask.iconName, mask.prefix) : Promise.resolve({
                         found: false,
                         width: 512,
                         height: 512,
                         icon: {}
-                    })]).then(function (_ref) {
+                    })]).then(function(_ref) {
                         var _ref2 = _slicedToArray(_ref, 2),
                             main = _ref2[0],
                             mask = _ref2[1];
@@ -5256,7 +5304,7 @@
                 });
             };
 
-            providers$$1.generateAbstractIcon = function (_ref3) {
+            providers$$1.generateAbstractIcon = function(_ref3) {
                 var children = _ref3.children,
                     attributes = _ref3.attributes,
                     main = _ref3.main,
@@ -5297,14 +5345,14 @@
                         classes = _params$classes === void 0 ? [] : _params$classes;
                     return domVariants({
                         type: 'layer'
-                    }, function () {
+                    }, function() {
                         callHooks('beforeDOMElementCreation', {
                             assembler: assembler,
                             params: params
                         });
                         var children = [];
-                        assembler(function (args) {
-                            Array.isArray(args) ? args.map(function (a) {
+                        assembler(function(args) {
+                            Array.isArray(args) ? args.map(function(a) {
                                 children = children.concat(a.abstract);
                             }) : children = children.concat(args.abstract);
                         });
@@ -5337,7 +5385,7 @@
                     return domVariants({
                         type: 'counter',
                         content: content
-                    }, function () {
+                    }, function() {
                         callHooks('beforeDOMElementCreation', {
                             content: content,
                             params: params
@@ -5375,7 +5423,7 @@
                     return domVariants({
                         type: 'text',
                         content: content
-                    }, function () {
+                    }, function() {
                         callHooks('beforeDOMElementCreation', {
                             content: content,
                             params: params
@@ -5395,7 +5443,7 @@
             };
         },
         provides: function provides(providers$$1) {
-            providers$$1.generateLayersText = function (node, nodeMeta) {
+            providers$$1.generateLayersText = function(node, nodeMeta) {
                 var title = nodeMeta.title,
                     transform = nodeMeta.transform,
                     extra = nodeMeta.extra;
@@ -5428,6 +5476,7 @@
 
     var CLEAN_CONTENT_PATTERN = new RegExp("\"", 'ug');
     var SECONDARY_UNICODE_RANGE = [1105920, 1112319];
+
     function hexValueFromContent(content) {
         var cleaned = content.replace(CLEAN_CONTENT_PATTERN, '');
         var codePoint = codePointAt(cleaned, 0);
@@ -5441,14 +5490,14 @@
 
     function replaceForPosition(node, position) {
         var pendingAttribute = "".concat(DATA_FA_PSEUDO_ELEMENT_PENDING).concat(position.replace(':', '-'));
-        return new Promise(function (resolve, reject) {
+        return new Promise(function(resolve, reject) {
             if (node.getAttribute(pendingAttribute) !== null) {
                 // This node is already being processed
                 return resolve();
             }
 
             var children = toArray(node.children);
-            var alreadyProcessedPseudoElement = children.filter(function (c) {
+            var alreadyProcessedPseudoElement = children.filter(function(c) {
                 return c.getAttribute(DATA_FA_PSEUDO_ELEMENT) === position;
             })[0];
             var styles = WINDOW.getComputedStyle(node, position);
@@ -5498,7 +5547,7 @@
                     var meta = blankMeta();
                     var extra = meta.extra;
                     extra.attributes[DATA_FA_PSEUDO_ELEMENT] = position;
-                    findIcon(iconName, prefix).then(function (main) {
+                    findIcon(iconName, prefix).then(function(main) {
                         var _abstract = makeInlineSvgAbstract(_objectSpread2(_objectSpread2({}, meta), {}, {
                             icons: {
                                 main: main,
@@ -5518,7 +5567,7 @@
                             node.appendChild(element);
                         }
 
-                        element.outerHTML = _abstract.map(function (a) {
+                        element.outerHTML = _abstract.map(function(a) {
                             return toHtml(a);
                         }).join('\n');
                         node.removeAttribute(pendingAttribute);
@@ -5543,15 +5592,15 @@
 
     function searchPseudoElements(root) {
         if (!IS_DOM) return;
-        return new Promise(function (resolve, reject) {
+        return new Promise(function(resolve, reject) {
             var operations = toArray(root.querySelectorAll('*')).filter(processable).map(replace);
             var end = perf.begin('searchPseudoElements');
             disableObservation();
-            Promise.all(operations).then(function () {
+            Promise.all(operations).then(function() {
                 end();
                 enableObservation();
                 resolve();
-            }).catch(function () {
+            }).catch(function() {
                 end();
                 enableObservation();
                 reject();
@@ -5569,7 +5618,7 @@
             };
         },
         provides: function provides(providers$$1) {
-            providers$$1.pseudoElements2svg = function (params) {
+            providers$$1.pseudoElements2svg = function(params) {
                 var _params$node = params.node,
                     node = _params$node === void 0 ? DOCUMENT : _params$node;
 
@@ -5624,7 +5673,7 @@
             flipY: false,
             rotate: 0
         };
-        return transformString.toLowerCase().split(' ').reduce(function (acc, n) {
+        return transformString.toLowerCase().split(' ').reduce(function(acc, n) {
             var parts = n.toLowerCase().split('-');
             var first = parts[0];
             var rest = parts.slice(1).join('-');
@@ -5702,7 +5751,7 @@
             };
         },
         provides: function provides(providers) {
-            providers.generateAbstractTransformGrouping = function (_ref) {
+            providers.generateAbstractTransformGrouping = function(_ref) {
                 var main = _ref.main,
                     transform = _ref.transform,
                     containerWidth = _ref.containerWidth,
@@ -5771,7 +5820,7 @@
             return {
                 parseNodeAttributes: function parseNodeAttributes(accumulator, node) {
                     var maskData = node.getAttribute('data-fa-mask');
-                    var mask = !maskData ? emptyCanonicalIcon() : getCanonicalIcon(maskData.split(' ').map(function (i) {
+                    var mask = !maskData ? emptyCanonicalIcon() : getCanonicalIcon(maskData.split(' ').map(function(i) {
                         return i.trim();
                     }));
 
@@ -5786,7 +5835,7 @@
             };
         },
         provides: function provides(providers) {
-            providers.generateAbstractMask = function (_ref) {
+            providers.generateAbstractMask = function(_ref) {
                 var children = _ref.children,
                     attributes = _ref.attributes,
                     main = _ref.main,
@@ -5869,7 +5918,7 @@
                 reduceMotion = WINDOW.matchMedia('(prefers-reduced-motion: reduce)').matches;
             }
 
-            providers.missingIconAbstract = function () {
+            providers.missingIconAbstract = function() {
                 var gChildren = [];
                 var FILL = {
                     fill: 'currentColor'

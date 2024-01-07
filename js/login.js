@@ -25,19 +25,19 @@ function signUp() {
     signUpInput[1].style.display = 'block';
     signUpInput[2].style.display = 'block';
     creAccoptionLabel.innerText = 'Have account! ';
-    accOption.innerText = 'Login an account'
+    accOption.innerText = 'Login an account';
     dd = true;
-    inputLabel1.innerText = 'Email'
+    inputLabel1.innerText = 'Email';
 }
 
 function login() {
-    creAccoptionLabel.innerText = "Don't have account! "
-    signUpInput[0].style.display = 'none'
-    signUpInput[1].style.display = 'none'
-    signUpInput[2].style.display = 'none'
-    accOption.innerText = 'Create an account'
+    creAccoptionLabel.innerText = "Don't have account! ";
+    signUpInput[0].style.display = 'none';
+    signUpInput[1].style.display = 'none';
+    signUpInput[2].style.display = 'none';
+    accOption.innerText = 'Create an account';
     dd = false;
-    inputLabel1.innerText = 'Email or username'
+    inputLabel1.innerText = 'Email or username';
 }
 
 function checkDataSignIn() {
@@ -55,11 +55,11 @@ function checkDataSignIn() {
     } else if (checkPass == '') {
         alert('Pass Word must fill out!');
     } else if (checkComfilmPass == '') {
-        alert('Comfilm Password must fill out!')
+        alert('Comfilm Password must fill out!');
     } else if (checkComfilmPass !== checkPass) {
-        alert("Comfilm Password doesn't match with password sign up")
+        alert("Comfilm Password doesn't match with password sign up");
     } else if (document.getElementById('checkbox-term').checked == false) {
-        alert('Please indicate that you have read and accept agreements in tickbox')
+        alert('Please indicate that you have read and accept agreements in tickbox');
     } else {
         saveAccount();
     }
@@ -73,8 +73,8 @@ function checkDataLogin() {
         alert('Please put Email or username into box input');
     } else if (checkPass == "") {
         alert('Please put password into box input');
-    } else if (document.getElementById('checkbox-term').checked == false) {
-        alert('Please indicate that you have read and accept agreements in tickbox')
+    } else if (document.getElementById('checkbox-term').checked !== true) {
+        alert('Please indicate that you have read and accept agreements in tickbox');
     } else {
         loginAccount();
     }

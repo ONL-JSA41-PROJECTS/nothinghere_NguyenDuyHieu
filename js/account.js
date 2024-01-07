@@ -14,7 +14,7 @@ function saveAccount() { //Create Account
     localStorage.setItem('fullName', fullName);
     localStorage.setItem('userName', userName);
     localStorage.setItem('email', email);
-    localStorage.setItem('pass', pass);
+    localStorage.setItem('pass', md5(pass));
     localStorage.setItem('status', true);
     window.location.href = 'home.html';
     alert('Create account sucess!');
@@ -25,7 +25,7 @@ function saveAccount() { //Create Account
 function loginAccount() { //Login Account
     var userName = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
-    if (userName == localStorage.getItem('userName') && pass == localStorage.getItem('pass')) {
+    if (userName == localStorage.getItem('userName') || userName == localStorage.getItem('email') && md5(pass) == localStorage.getItem('pass')) {
         localStorage.status = true;
         alert('Login Sucess!');
         window.location.href = 'home.html';
@@ -60,15 +60,6 @@ function logOutAccount() { //Logout Account
     // window.location.reload;
     checkStatus();
 }
-
-//Reject project add anonymous
-// document.getElementById('anonymous').onclick = function() {
-//     if (localStorage.isAnonymous == undefined) {
-//         localStorage.setItem('isAnonymous', false);
-//         console.log('anonymous is loged');
-//         window.location.href = 'home.html'
-//     }
-// }
 
 function checkLogin() {
     if (localStorage.status = true) {

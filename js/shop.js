@@ -4,37 +4,6 @@ async function requestReponse(keyWord) {
     const data = await response.json();
     console.log(data);
     for (let items of data.data) {
-        // let item = document.createElement("div")
-        // item.classList.add("item");
-
-        // let imgContainer = document.createElement("div")
-        // imgContainer.classList.add("image-container")
-
-        // let image = document.createElement("img")
-        // image.setAttribute("src", items.image)
-        // imgContainer.appendChild(image);
-        // item.appendChild(imgContainer);
-
-        // let box = document.createElement("div")
-        // box.classList.add("box")
-
-        // let name = document.createElement("h5");
-        // name.classList.add("product-name");
-        // name.innerText = items.name.toUpperCase();
-        // box.appendChild(name);
-
-        // let price = document.createElement("h6");
-        // price.innerHTML = "<b>Price:</b> " + items.price;
-        // box.appendChild(price);
-
-        // let btn = document.createElement("button")
-        // btn.setAttribute("onclick", "addToCart()")
-        // btn.innerHTML = "Add to cart"
-        // box.appendChild(btn)
-
-        // item.appendChild(box);
-        // document.getElementById("productChild").appendChild(card);
-        // console.log(items);
         let item = document.createElement("div");
         item.classList.add("items");
 
@@ -102,10 +71,10 @@ function showCategory(keyWord) {
 
 showCategory("winKey");
 
-function hideCategory(keyWord) {
-    const showItems = document.getElementById(`product_${keyWord}`);
-    let keyPath = localStorage.lastItem;
-    const hideItems = document.getElementById('product_' + keyPath);
-    hideItems.style.display = "none";
-    showItems.style.display = "block";
+if (localStorage.data == null | localStorage.data == undefined) {
+    data = ['none'];
+    data_string = JSON.stringify(data);
+    localStorage.setItem('isAddItem', false);
+    localStorage.setItem('data', data_string);
+    localStorage.setItem('countItem', 0);
 }

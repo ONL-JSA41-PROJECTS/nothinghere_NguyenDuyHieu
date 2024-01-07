@@ -1,3 +1,8 @@
-function showItem() {}
+function startUp() {
+    // console.log(data);
+    checkLogin();
+}
 
-function showCategory(itemShow) {};
+function itemModify() {};
+
+function itemDelete() {};
