@@ -82,20 +82,30 @@ async function requestReponse(keyWord) {
         let btnAct = document.createElement("input");
         btnAct.value = "Add to cart";
         btnAct.type = "button";
+        btnAct.setAttribute("onclick", `addToCart("index_${items.index}")`);
         btnAct.classList.add("itemBtn");
         itemContainer.appendChild(btnAct);
 
-        document.getElementsByClassName("productChild")[0].appendChild(itemContainer);
+        document.getElementsByClassName(`productChild`)[0].appendChild(itemContainer);
         console.log(items.name + " loaded");
     }
 }
 
 function showCategory(keyWord) {
     let createDiv = document.createElement("div");
-    createDiv.classList.add("productChild");
+    let createDivChild = document.createElement("div");
+    localStorage.setItem("lastItem", keyWord);
+    createDiv.classList.add(`productChild`);
     document.getElementsByClassName("showContent")[0].appendChild(createDiv);
     requestReponse(keyWord);
 }
 
+showCategory("winKey");
 
-showCategory("winKey")
+function hideCategory(keyWord) {
+    const showItems = document.getElementById(`product_${keyWord}`);
+    let keyPath = localStorage.lastItem;
+    const hideItems = document.getElementById('product_' + keyPath);
+    hideItems.style.display = "none";
+    showItems.style.display = "block";
+}

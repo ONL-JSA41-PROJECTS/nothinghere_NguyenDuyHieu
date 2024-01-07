@@ -48,11 +48,12 @@ html {
     color: rgb(141, 140, 140);
 }
 
-.productChild {
+.porductChild {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
+    width: 80%;
 }
 
 .item {

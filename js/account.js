@@ -69,3 +69,9 @@ function logOutAccount() { //Logout Account
 //         window.location.href = 'home.html'
 //     }
 // }
+
+function checkLogin() {
+    if (localStorage.getItem('status') == true) {
+        document.getElementsByClassName('fix')[0].style.display = 'none';
+    } else {}
+}
