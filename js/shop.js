@@ -16,7 +16,6 @@ async function requestReponse(keyWord) {
         img.classList.add("imgItem");
         imgContainer.appendChild(img);
 
-
         let itemContainer = document.createElement("div");
         itemContainer.classList.add("itemContainer");
 
@@ -51,7 +50,7 @@ async function requestReponse(keyWord) {
         let btnAct = document.createElement("input");
         btnAct.value = "Add to cart";
         btnAct.type = "button";
-        btnAct.setAttribute("onclick", `addToCart("index_${items.index}")`);
+        btnAct.setAttribute("onclick", `addToCart("${keyWord}_${items.index}")`);
         btnAct.classList.add("itemBtn");
         itemContainer.appendChild(btnAct);
 
@@ -61,8 +60,11 @@ async function requestReponse(keyWord) {
 }
 
 function showCategory(keyWord) {
+    const delChildD = document.getElementsByClassName('showContent')[0];
+    // const delChildC = document.getElementsByClassName('productChild')[0];
+    delChildD.removeChild(delChildD.firstElementChild)
     let createDiv = document.createElement("div");
-    let createDivChild = document.createElement("div");
+    // let createDivChild = document.createElement("div");
     localStorage.setItem("lastItem", keyWord);
     createDiv.classList.add(`productChild`);
     document.getElementsByClassName("showContent")[0].appendChild(createDiv);
