@@ -48,12 +48,19 @@ html {
     color: rgb(141, 140, 140);
 }
 
-.porductChild {
-    display: flex;
+.productChild {
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    margin: auto;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
     justify-items: center;
-    width: 80%;
+    width: 100%;
+    padding: 2.5em 0;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
 }
 
 .item {
@@ -73,4 +80,34 @@ html {
 
 .contentItem {
     align-items: center;
+}
+
+.itemContainer:hover {
+    transform: translateY(-0.1in);
+}
+
+.itemContainer {
+    padding: 5% 2.5% 5% 2.5%;
+    font-size: small;
+    max-width: 18em;
+    transition: transform 0.7s;
+}
+
+.itemBtn {
+    background-color: white;
+    border: none;
+    border: solid 1px black;
+    margin-top: 14px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.itemBtn:hover {
+    background-color: #000;
+    color: #fff;
 }

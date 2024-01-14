@@ -31,10 +31,10 @@ async function requestReponse(keyWord) {
         price.innerHTML = "Price: " + items.price + "$\n";
         itemContainer.appendChild(price);
 
-        let status = document.createElement("h4");
-        status.classList.add("itemStatus");
-        status.classList.add(items.status);
-        status.innerHTML = "Status:";
+        // let status = document.createElement("h4");
+        // status.classList.add("itemStatus");
+        // status.classList.add(items.status);
+        // status.innerHTML = "Status:";
 
         let statusShow = document.createElement("span");
         statusShow.classList.add(items.price);
@@ -43,9 +43,9 @@ async function requestReponse(keyWord) {
         } else {
             statusShow.innerHTML = "Available"
         }
-        status.appendChild(statusShow);
+        // status.appendChild(statusShow);
 
-        itemContainer.appendChild(status);
+        // itemContainer.appendChild(status);
 
         let btnAct = document.createElement("input");
         btnAct.value = "Add to cart";
@@ -61,10 +61,8 @@ async function requestReponse(keyWord) {
 
 function showCategory(keyWord) {
     const delChildD = document.getElementsByClassName('showContent')[0];
-    // const delChildC = document.getElementsByClassName('productChild')[0];
     delChildD.removeChild(delChildD.firstElementChild)
     let createDiv = document.createElement("div");
-    // let createDivChild = document.createElement("div");
     localStorage.setItem("lastItem", keyWord);
     createDiv.classList.add(`productChild`);
     document.getElementsByClassName("showContent")[0].appendChild(createDiv);

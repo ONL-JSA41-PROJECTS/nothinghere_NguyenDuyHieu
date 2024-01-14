@@ -25,7 +25,10 @@ function saveAccount() { //Create Account
 function loginAccount() { //Login Account
     var userName = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
-    if (userName == localStorage.getItem('userName') || userName == localStorage.getItem('email') && md5(pass) == localStorage.getItem('pass')) {
+    if (userName == localStorage.getItem('userName') ||
+        localStorage.getItem('status') ||
+        userName == localStorage.getItem('email') &&
+        md5(pass) == localStorage.getItem('pass')) {
         localStorage.status = true;
         alert('Login Sucess!');
         window.location.href = 'home.html';
@@ -42,7 +45,15 @@ function checkStatus() { //Change Text when Login of Logout
     // if (localStorage.getItem('isAnonymous') == 'true') {
     //     displayNameUser.innerHTML = 'anonymous';
     // } else
-    if (localStorage.getItem('status') == 'true') {
+    if (localStorage.getItem('status') == 'undefined' ||
+        localStorage.getItem('status') == 'undefined' ||
+        localStorage.getItem('userName') == 'undefined' ||
+        localStorage.getItem('email') == 'undefined' ||
+        localStorage.getItem('pass') == 'undefined') {
+        localStorage.setItem('status', false);
+        displayNameUser.innerHTML = 'login';
+        console.log('checked account 0');
+    } else if (localStorage.getItem('status') == 'true') {
         displayNameUser.innerHTML = localStorage.userName;
         displayNameUser.setAttribute('href', 'login.after.html');
         // displayUserIcon.style.display = 'block';
@@ -51,7 +62,7 @@ function checkStatus() { //Change Text when Login of Logout
         displayNameUser.innerHTML = 'Login';
         // displayUserIcon.style.display = 'none';
         console.log('checked account 0');
-    }
+    };
 }
 
 function logOutAccount() { //Logout Account

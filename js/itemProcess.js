@@ -23,18 +23,3 @@ function addItems(item) {
     }
     localStorage.count++;
 };
-//test
-
-// let data = ['win_1', 'win_2', 'win_3'];
-
-// localStorage.setItem('data', data);
-// let data_test = JSON.stringify(data);
-// // data_test = localStorage.getItem('data');
-// console.log(data_test);
-
-// localStorage.setItem('data', data_test);
-
-// data_string = localStorage.data;
-
-// data_json = JSON.parse(data_string);
-// console.log(data_string);

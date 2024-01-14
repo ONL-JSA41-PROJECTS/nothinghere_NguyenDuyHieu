@@ -45,6 +45,7 @@ html {
 .head-container h2 {
     display: inline;
     text-transform: uppercase;
+    /* z-index: inherit; */
 }
 
 .showEmailCat,
