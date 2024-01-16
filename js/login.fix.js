@@ -7,4 +7,5 @@ function startLoad() {
             localStorage.status = false;
         }
     checkStatus();
+    window.location.href = 'login.html';
 }

@@ -7,6 +7,8 @@ function addToCart(inputItems) {
         index++;
         localStorage.setItem(`${inputItems}`, index);
     }
+    addItems(inputItems);
+    alert('added to Cart! Check your Cart')
 }
 
 
