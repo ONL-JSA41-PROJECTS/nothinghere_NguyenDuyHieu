@@ -77,4 +77,5 @@ if (localStorage.data == null | localStorage.data == undefined) {
     localStorage.setItem('isAddItem', false);
     localStorage.setItem('data', data_string);
     localStorage.setItem('countItem', 0);
-}
+    localStorage.setItem('count',0);
+};
