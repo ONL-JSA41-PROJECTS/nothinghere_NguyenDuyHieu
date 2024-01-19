@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/top.css">
 </head>
 
-<body onload="startUp()">
+<body onload="checkStatus();onload()">
     <div class="container">
         <div class="top-container">
             <ul class="top-list">
@@ -36,12 +36,21 @@
             </ul>
         </div>
         <div class="content-container">
-            <div class="isNotLogin" style="display: none;">
+            <div class="notif" id="isNotLogin" style="display: none;">
                 <div class="fix">
-                    <strong>Warning!</strong> You are not logged in, please log in to continue shopping
-                    <input type="button" value="Go to Login">
+                    <strong>Warning!</strong> You are not logged in, please log in to continue shopping <br>
+                    <input type="button" id="btnNotLogin" value="Go to Login" class="btn-notif">
                 </div>
                 <div class="content"></div>
+            </div>
+            <div class="notif" id="isNotAddItem" style="display:none;">
+                <h3>Hmmm...,You are not buying any item, go to show some item</h3>
+                <input type="button" id="btnNotAdd" value="Go to Shop" class="btn-notif">
+            </div>
+            <div id="isAddItem" style="display: none;padding: 5% 0 2.5% 0;text-align:center">
+                <div class="leftContainer">
+                </div>
+                <div class="mainContainer"></div>
             </div>
         </div>
     </div>

@@ -52,15 +52,13 @@ function checkStatus() { //Change Text when Login of Logout
         localStorage.getItem('pass') == 'undefined') {
         localStorage.setItem('status', false);
         displayNameUser.innerHTML = 'login';
-        console.log('checked account 0');
+        console.log('checked account 2');
     } else if (localStorage.getItem('status') == 'true') {
         displayNameUser.innerHTML = localStorage.userName;
         displayNameUser.setAttribute('href', 'login.after.html');
-        // displayUserIcon.style.display = 'block';
         console.log('checked account 1');
     } else if (localStorage.getItem('status') == 'false') {
         displayNameUser.innerHTML = 'Login';
-        // displayUserIcon.style.display = 'none';
         console.log('checked account 0');
     };
 }
